@@ -1,9 +1,9 @@
-import "./ProductDEtail.css";
-import { useParams, Link } from "react-router-dom";
-import { products, products1 } from "../../components/mock";
+import "./ProductDetail.css";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cartSlice";
 import { addToLike } from "../../redux/likeSlice";
+import { products, products1 } from "../../components/mock";
+import { useParams } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 import { FaMinus } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa";
@@ -17,9 +17,9 @@ import { FaHeadphones } from "react-icons/fa";
 import { FaShieldAlt } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
 
-function ProductDEtail() {
-  const { id } = useParams();
+function ProductDetail() {
   const dispatch = useDispatch();
+  const { id } = useParams();
 
   const allProducts = [...products, ...products1];
 
@@ -31,10 +31,9 @@ function ProductDEtail() {
         <div className="product-top">
           <div className="product-image-side">
             <div className="main-image">
-              <img src={product.image} alt="Macbook" />
+              <img src={product.image} alt={product.name} />
             </div>
           </div>
-
           <div className="product-info">
             <div className="rating">
               <div className="stars">
@@ -135,11 +134,12 @@ function ProductDEtail() {
                   <FaPlus />
                 </button>
               </div>
-              x
+
               <button className="buy-btn">
                 <FaTag />
                 GET DEAL (390K)
               </button>
+
               <button
                 onClick={() => dispatch(addToCart(product))}
                 className="add-btn"
@@ -151,7 +151,7 @@ function ProductDEtail() {
             <div className="extra-actions">
               <div>
                 <button
-                  className="fayz"
+                  className="onclick"
                   onClick={() => dispatch(addToLike(product))}
                 >
                   <FaHeart />
@@ -210,7 +210,7 @@ function ProductDEtail() {
               </p>
             </div>
 
-            <div className="features1">
+            <div className="features">
               <h3>Feature</h3>
 
               <p>
@@ -264,4 +264,5 @@ function ProductDEtail() {
     </div>
   );
 }
-export default ProductDEtail;
+
+export default ProductDetail;

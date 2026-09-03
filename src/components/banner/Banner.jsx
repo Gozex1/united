@@ -71,17 +71,17 @@ function Banner() {
           </div>
         </div>
       </section>
-      <section className="features">
-        <div className="feature">
-          <FaBox className="feature-icon" />
+      <section className="features1">
+        <div className="feature1">
+          <FaBox className="feature1-icon" />
           <div>
             <h3>FASTED DELIVERY</h3>
             <p>Delivery in 24H</p>
           </div>
         </div>
 
-        <div className="feature">
-          <FaTrophy className="feature-icon" />
+        <div className="feature1">
+          <FaTrophy className="feature1-icon" />
 
           <div>
             <h3>24 HOURS RETURN</h3>
@@ -89,15 +89,15 @@ function Banner() {
           </div>
         </div>
 
-        <div className="feature">
-          <FaCreditCard className="feature-icon" />
+        <div className="feature1">
+          <FaCreditCard className="feature1-icon" />
           <div>
             <h3>SECURE PAYMENT</h3>
             <p>Your money is safe</p>
           </div>
         </div>
-        <div className="feature">
-          <FaHeadset className="feature-icon" />
+        <div className="feature1">
+          <FaHeadset className="feature1-icon" />
           <div>
             <h3>SUPPORT 24/7</h3>
             <p>Live contact/message</p>

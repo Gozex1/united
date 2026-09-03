@@ -16,6 +16,8 @@
   padding-bottom: 50px;
 }
 
+/* IMAGE */
+
 .product-image-side {
   width: 48%;
 }
@@ -34,6 +36,8 @@
   max-width: 500px;
   object-fit: contain;
 }
+
+/* INFO */
 
 .product-info {
   width: 52%;
@@ -80,6 +84,8 @@
   font-weight: bold;
 }
 
+/* PRICE */
+
 .price-box {
   display: flex;
   align-items: center;
@@ -124,6 +130,8 @@
   border-top: 1px solid #eee;
   margin-bottom: 20px;
 }
+
+/* OPTIONS */
 
 .options {
   display: flex;
@@ -172,6 +180,8 @@
   background: #143a70;
 }
 
+/* ACTION BUTTONS */
+
 .product-actions {
   display: flex;
   gap: 15px;
@@ -208,7 +218,6 @@
   font-weight: bold;
   cursor: pointer;
   padding: 0 20px;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,19 +225,6 @@
 }
 
 .add-btn {
-  border: 2px solid #4c93c9;
-  background: white;
-  color: #317ab0;
-  border-radius: 30px;
-  padding: 0 25px;
-  font-weight: bold;
-  cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.fayz {
   border: 2px solid #4c93c9;
   background: white;
   color: #317ab0;
@@ -248,11 +244,20 @@
   color: #666;
   font-size: 14px;
 }
+
+.extra-actions div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 .extra-actions span {
   color: black;
 }
-
-.extra-actions div {
+.onclick {
+  border: 2px solid #4c93c9;
+  background: none;
+  padding: 4px 12px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -281,7 +286,6 @@
   background: black;
   font-weight: bold;
 }
-
 .description-section {
   border: 1px solid #eee;
 }
@@ -328,11 +332,11 @@
   margin-bottom: 15px;
 }
 
-.features1 {
+.features {
   width: 25%;
 }
 
-.features1 p {
+.features p {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -341,7 +345,7 @@
   color: #555;
 }
 
-.features1 svg {
+.features svg {
   color: #47a447;
 }
 
@@ -354,7 +358,6 @@
   color: #666;
   margin-bottom: 15px;
 }
-
 @media (max-width: 1000px) {
   .product-page {
     padding: 30px 20px;
@@ -421,6 +424,7 @@
     white-space: nowrap;
   }
 }
+
 @media (max-width: 600px) {
   .product-page {
     padding: 25px 15px;
@@ -568,7 +572,6 @@
     font-size: 12px;
   }
 }
-
 @media (max-width: 300px) {
   .product-page {
     padding: 15px 8px;
