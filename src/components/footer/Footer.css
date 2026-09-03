@@ -1,0 +1,221 @@
+.footer {
+  background: #191d1f;
+  color: white;
+  margin-top: 10px;
+}
+
+.footer-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 45px 20px 50px;
+  display: grid;
+  grid-template-columns: 1.35fr 1fr 1fr 1fr 1.5fr;
+  gap: 35px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.logo-circle {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 6px solid #ff7029;
+  border-radius: 50%;
+
+  color: transparent;
+  box-sizing: border-box;
+}
+
+.support-title {
+  color: #777f83;
+  font-size: 10px;
+  margin: 0 0 4px;
+}
+
+.phone {
+  color: white;
+  font-size: 12px;
+  margin: 0 0 9px;
+}
+
+.address {
+  color: #92999c;
+  font-size: 10px;
+  line-height: 1.6;
+  margin: 0 0 10px;
+}
+
+.email {
+  color: white;
+  font-size: 10px;
+  margin: 0;
+}
+
+.footer-column h3 {
+  font-size: 10px;
+  font-weight: 500;
+  margin: 3px 0 17px;
+  color: #ffffff;
+}
+
+.footer-column > a {
+  display: block;
+
+  color: #858d91;
+  text-decoration: none;
+
+  font-size: 9px;
+  margin-bottom: 11px;
+
+  transition: 0.2s;
+}
+
+.footer-column > a:hover {
+  color: white;
+}
+
+.active-link {
+  display: flex !important;
+  align-items: center;
+  gap: 6px;
+}
+
+.active-link span {
+  width: 16px;
+  height: 2px;
+  background: #e7c500;
+}
+
+.browse {
+  color: #e6c500 !important;
+
+  display: flex !important;
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 15px;
+}
+
+.browse svg {
+  font-size: 9px;
+}
+
+.app-button {
+  width: 111px;
+  height: 44px;
+
+  border: none;
+  border-radius: 2px;
+
+  background: #2b3033;
+  color: white;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 6px 11px;
+  margin-bottom: 7px;
+
+  cursor: pointer;
+}
+
+.app-button svg {
+  font-size: 21px;
+}
+
+.app-button div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.app-button small {
+  font-size: 6px;
+  color: #ddd;
+  margin-bottom: 3px;
+}
+
+.app-button strong {
+  font-size: 8px;
+  font-weight: 500;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 5px;
+}
+
+.tags span {
+  border: 1px solid #303638;
+  padding: 5px 8px;
+  color: #e1e1e1;
+  font-size: 8px;
+  transition: 0.2s;
+}
+
+.tags span:hover {
+  border-color: #777;
+}
+
+.footer-bottom {
+  border-top: 1px solid #252a2c;
+
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-bottom p {
+  color: #7c8386;
+  font-size: 8px;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-brand {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 35px 25px;
+  }
+
+  .footer-brand {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand {
+    grid-column: span 1;
+  }
+}

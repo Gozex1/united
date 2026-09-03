@@ -1,0 +1,72 @@
+.letter-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #1b6392;
+  padding: 80px;
+}
+.letter-wrapper h2 {
+  color: white;
+  font-size: 32px;
+}
+.letter-wrapper p {
+  color: #c8c7c7;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+.inp-letter {
+  display: flex;
+  margin-top: 30px;
+  border: 1px solid white;
+  padding: 8px 30px;
+  gap: 50px;
+  background: white;
+}
+.inp-letter input {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+}
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 10px;
+  background: #fa8232;
+  border: none;
+  color: white;
+  font-weight: 500;
+}
+.comp {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+@media (max-width: 550px) {
+  .letter-wrapper {
+    padding: 30px;
+  }
+  .inp-letter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .comp {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 350px) {
+  .inp-letter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+}

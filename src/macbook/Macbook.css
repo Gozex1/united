@@ -1,0 +1,41 @@
+.macbook {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  align-items: center;
+  gap: 80px;
+  background: #ffe7d6;
+  border-radius: 20px;
+}
+.mac-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.svae {
+  background: #2da5f3;
+  display: flex;
+  /* width: 60%; */
+  justify-content: center;
+  padding: 3px;
+  color: white;
+}
+.pro {
+  font-size: 48px;
+}
+.apple {
+  font-size: 20px;
+}
+@media (max-width: 1055px) {
+  .macbook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .mac{
+    width: 100%;
+  }
+}

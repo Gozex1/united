@@ -1,0 +1,17 @@
+.products-section {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+@media (max-width:1300px) {
+  .products-section{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+}

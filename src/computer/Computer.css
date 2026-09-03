@@ -1,0 +1,146 @@
+.ads {
+  width: 90%;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+}
+.ad-card {
+  flex: 1;
+  min-height: 390px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.yellow-ad {
+  background: #fff1ad;
+}
+
+.yellow-ad img {
+  width: 150px;
+  height: 130px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.yellow-ad h2 {
+  font-size: 28px;
+  line-height: 1.25;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.yellow-ad p {
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.only-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.only-price span {
+  color: #666;
+}
+
+.only-price strong {
+  background: white;
+  padding: 13px 20px;
+  color: #555;
+}
+
+.ad-card button {
+  width: 100%;
+  padding: 17px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.yellow-ad button {
+  background: #ff6c2d;
+}
+
+.blue-ad {
+  background: #193d5a;
+  justify-content: center;
+}
+
+.summer {
+  background: #284c67;
+  color: #ddd;
+  padding: 10px 15px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.blue-ad h2 {
+  color: white;
+  font-size: 29px;
+  margin-bottom: 15px;
+}
+
+.blue-ad p {
+  color: #ddd;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+.rwrw {
+  display: flex;
+}
+
+.blue-ad p b {
+  color: #e2c637;
+}
+
+.blue-ad button {
+  background: #278bc8;
+}
+@media (max-width: 1333px) {
+  .rwrw {
+    display: flex;
+    flex-direction: column;
+  }
+  .ad-card {
+    display: flex;
+  }
+  .fayzullo {
+    display: flex;
+    gap: 20px;
+  }
+}
+@media (max-width: 510px) {
+  .ads {
+    width: 90%;
+  }
+  .only-price strong {
+    padding: 5px 9px;
+    font-size: 13px;
+  }
+  .yellow-ad p {
+    font-size: 15px;
+  }
+  .yellow-ad h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .fayzullo {
+    display: flex;
+    flex-direction: column;
+  }
+}

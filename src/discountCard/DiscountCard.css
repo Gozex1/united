@@ -1,0 +1,84 @@
+.discount-card {
+  width: 260px;
+  height: 620px;
+  background-image: url("../assets/Image\ \(29\).svg");
+  background-size: 100% auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: #f1cc28;
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.discount-content {
+  padding-top: 28px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.category1 {
+  color: #e85d2a;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.discount-content h2 {
+  margin: 0;
+  font-size: 27px;
+  font-weight: 600;
+  color: #111;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #333;
+}
+
+.offer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-size: 11px;
+  color: #111;
+}
+
+.offer button {
+  border: none;
+  background: white;
+  padding: 9px 12px;
+  font-size: 11px;
+  color: #222;
+  border-radius: 2px;
+}
+
+.shop-btn2 {
+  margin-top: 25px;
+  width: 148px;
+  height: 44px;
+  border: none;
+  border-radius: 3px;
+  background: #ff7435;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.shop-btn2 svg {
+  font-size: 14px;
+}
+@media (max-width: 500px) {
+  .discount-card {
+    display: none;
+  }
+}
