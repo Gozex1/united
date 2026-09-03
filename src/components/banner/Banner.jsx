@@ -8,8 +8,8 @@ import {
 import { GoDotFill } from "react-icons/go";
 import { GoDot } from "react-icons/go";
 import pc from "../../assets/Image (14).svg";
-import phone from "../../assets/Image 5.svg";
-import erepods from "../../assets/Image 4.svg";
+import phone from "../../assets/image 5.svg";
+import erepods from "../../assets/image 4.svg";
 
 import "./Banner.css";
 
