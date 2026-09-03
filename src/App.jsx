@@ -10,8 +10,8 @@ import { Route, Routes } from "react-router-dom";
 import Like from "./router/like/Like";
 import Cart from "./router/cart/Cart";
 import Home from "./router/home/Home";
-import Footer from "./components/footer/footer";
-import ProductDetail from "./router/productDetail/ProductDEtail";
+import Footer from "./components/footer/Footer";
+import ProductDEtail from "./router/productDetail/ProductDEtail";
 import Allcatagory from "./router/allcatagory/Allcatagory";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
       </div>
       <Routes>
         <Route path="home" element={<Home />}></Route>
-        <Route path="/product/:id" element={<ProductDetail />}></Route>
+        <Route path="/product/:id" element={<ProductDEtail />}></Route>
         <Route path="cart" element={<Cart />}></Route>
         <Route path="like" element={<Like />}></Route>
         <Route path="allcatagory" element={<Allcatagory />}></Route>

@@ -1,4 +1,4 @@
-import "./ProductDetail.css";
+import "./ProductDEtail.css";
 import { useParams, Link } from "react-router-dom";
 import { products, products1 } from "../../components/mock";
 import { useDispatch } from "react-redux";
@@ -17,7 +17,7 @@ import { FaHeadphones } from "react-icons/fa";
 import { FaShieldAlt } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
 
-function ProductDetail() {
+function ProductDEtail() {
   const { id } = useParams();
   const dispatch = useDispatch();
 
@@ -264,4 +264,4 @@ function ProductDetail() {
     </div>
   );
 }
-export default ProductDetail;
+export default ProductDEtail;
